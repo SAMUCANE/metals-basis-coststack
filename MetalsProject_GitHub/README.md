@@ -25,38 +25,7 @@ realistic slippage and stochastic transit time.
 | Backtest hit rate | 92.8 – 98.7 % across metals/scenarios |
 | Mean P&L per trade | $37 (Al) – $887 (Sn) per tonne, aggressive slippage |
 
-The full numerical breakdown and discussion is in
-[`report/Metals_Basis_CostStack_Report.docx`](report/Metals_Basis_CostStack_Report.docx).
 
----
-
-## Repository layout
-
-```
-MetalsProject_GitHub/
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-│
-├── notebooks/
-│   ├── Metals_Basis.ipynb              # data loading + gross basis (sections 0-2)
-│   ├── Metals_Basis_CostStack.ipynb    # full pipeline (sections 0-12)
-│   ├── METALS_Final_v2.xlsx            # LME + SHFE + FX (co-located so notebooks load)
-│   ├── COST_STACK.xlsx                 # Freight + Oil + Interest Rates + Freight Base
-│   └── FX.xlsx                         # standalone FX (optional)
-│
-├── outputs/
-│   ├── RESULTS_20_05_26.xlsx           # 13 sheets covering Sections 6-11
-│   └── figures/
-│       ├── net_basis_all_metals.png
-│       ├── cost_stack_waterfall.png
-│       ├── sensitivity_heatmap_v2.png
-│       ├── nickel_breaks_halflife.png
-│       └── backtest_pnl_distribution.png
-│
-└── report/
-    └── Metals_Basis_CostStack_Report.docx   # detailed write-up (~30 pages)
 ```
 
 The notebook reads data files by bare filename, so the Excel files live next to the
