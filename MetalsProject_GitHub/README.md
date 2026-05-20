@@ -25,8 +25,6 @@ realistic slippage and stochastic transit time.
 | Backtest hit rate | 92.8 – 98.7 % across metals/scenarios |
 | Mean P&L per trade | $37 (Al) – $887 (Sn) per tonne, aggressive slippage |
 
-The full numerical breakdown and discussion is in
-[`report/Metals_Basis_CostStack_Report.docx`](report/Metals_Basis_CostStack_Report.docx).
 
 ---
 
